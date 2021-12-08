@@ -12,16 +12,15 @@ a {
 
 h1 {
   font-size: 4rem;
-  padding-bottom: 10px;
+  padding-bottom: 5%;
   font-family: "Sacramento", cursive;
-  color: #ff4c29;
+  color: #f3f4ed;
   font-weight: 900;
 }
 
 p {
   line-height: 2;
 }
-
 
 hr {
   border: 0;
@@ -31,10 +30,7 @@ hr {
   margin: 10px auto;
 }
 
-.title-description {
-  font-size: 1.5rem;
-  padding: 0 10%;
-}
+
 
 #about-me-section,
 #skills-section,
@@ -45,7 +41,15 @@ hr {
   width: 70%;
 }
 
+.container-fluid {
+  padding: 0 2%;
+}
+
 /*Navegation Bar*/
+
+.navbar {
+  padding: 3% 0;
+}
 
 .nav-item {
   padding: 0 18px;
@@ -53,7 +57,7 @@ hr {
 }
 
 .navbar-brand {
-  color: #fff;
+  color: #f3f4ed;
   font-family: "Sacramento", cursive;
   font-size: 3rem;
   margin: 0;
@@ -63,8 +67,8 @@ hr {
 }
 
 button.navbar-toggler {
-    height: 40px;
-    width: 75px;
+  height: 40px;
+  width: 75px;
 }
 
 .nav-link {
@@ -74,13 +78,29 @@ button.navbar-toggler {
 
 /*End Navegation Bar*/
 
-.container-fluid {
-  padding: 2%;
+#title {
+  background-color: #f0a500;
 }
 
-.my-pic {
-  width: 50%;
+/* .my-pic {
+  width: 100%;
 }
+
+.my-pic-column {
+  padding: 0;
+  width: 0%;
+} */
+
+.title-description {
+    font-size: 1rem;
+    padding: 0 10%;
+    color: #f3f4ed;
+    letter-spacing: 0.5rem;
+  }
+  
+  .description {
+      width: 100%;
+  }
 
 .row {
   padding: 5%;
@@ -120,18 +140,23 @@ button.navbar-toggler {
   color: #ff4c29;
 }
 
-
 .project-column {
-    padding: 10px;
+  padding: 10px;
 }
 
+.card-body {
+  padding: 10%;
+}
 
-
+.card-title {
+  padding-bottom: 10px;
+  font-weight: 900;
+  color: #f0a500;
+}
 
 #footer {
-  color: #f3f4ed;
+  background-color: gray;
   padding: 20px 0;
-  background-color: #f0a500;
 }
 
 .footer-link {
@@ -143,16 +168,16 @@ button.navbar-toggler {
   color: #ff4c29;
 }
 
-.contact-btn {
+.btn {
   border-radius: 5px;
   color: #f3f4ed;
   font-size: 15px;
-  background: #f0a500;
+  background-color: #f0a500;
   padding: 10px 20px 10px 20px;
 }
 
-.contact-btn:hover {
-  background: #ff4c29;
+.btn:hover {
+  background-color: #ff4c29;
   text-decoration: none;
   color: #f3f4ed;
 }
@@ -164,46 +189,45 @@ button.navbar-toggler {
   font-size: 0.8rem;
 }
 
-
-
 @media screen and (max-width: 800px) {
+  #about-me-section,
+  #skills-section,
+  #projects-section,
+  #contact {
+    padding: 2rem;
+    margin: 0 auto;
+    width: 90%;
+  }
 
-    #about-me-section,
-#skills-section,
-#projects-section,
-#contact {
-  padding: 2rem;
-  margin: 0 auto;
-  width: 90%;
-}
+  .about-me-title,
+  .skills-title,
+  .projects-title,
+  .contact-title {
+    font-size: 1.5rem;
+  }
 
-.about-me-title,
-.skills-title,
-.projects-title,
-.contact-title {
-  font-size: 1.5rem;
-}
-
-h1 {
+  h1 {
     font-size: 2rem;
-}
+  }
 
-h3 {
+  h3 {
     font-size: 1rem;
-}
+  }
 
-p {
-    font-size: .8rem;
-}
-
+  p {
+    font-size: 0.8rem;
+  }
 
   .navbar-brand {
     font-size: 2rem;
   }
-  
+
   .nav-link {
     font-size: 1rem;
     padding: 10px;
   }
 
+  .title-description {
+      font-size: .8rem;
   }
+}
