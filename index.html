@@ -30,99 +30,185 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
     <title>Marilize Pires</title>
   </head>
 
   <body>
     <section id="title">
       <div class="container-fluid">
-      
         <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navBarToggler"
-            aria-controls="navBarToggler"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">MP</a>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navBarToggler"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navBarToggler"
+              aria-controls="navBarToggler"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">MP</a>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navBarToggler"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- END Navbar -->
+
+        <!-- Title -->
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              class="my-pic"
+              src="images/me.png"
+              alt="moi-me-ich-ego"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <h1>Hello, I'm Marilize.</h1>
+            <h2 class="title-description">I write code, drink coffee, and play video games.</h2>
+            <!-- <button class="button-link" type="button">SKILLS</button>
+            <button class="button-link" type="button">PROJECTS</button>
+            <button class="button-link" type="button">RESUME</button> -->
           </div>
         </div>
-      </nav>
-      <!-- End Navbar -->
-
-      <!-- Title -->
-      <div class="row">
-        <div class="col-lg-6">
-          <img class="my-pic" src="images/marilize.png" alt="moi-me-ich-ego" />
-        </div>
-
-        <div class="col-lg-6">
-          <h1>Hello, I am Marilize.</h1>
-          <p>I write code and drink coffee.</p>
-          <button class="button-link" type="button">SKILLS</button>
-          <button class="button-link" type="button">PROJECTS</button>
-          <button class="button-link" type="button">RESUME</button>
-        </div>
       </div>
-      
-    </div>
     </section>
-    <!-- End Title -->
+    <!-- END Title -->
 
     <!-- About Me Section -->
-    <div id="about-me">
-      <h2 class="text-center about-me-title">About me.</h2>
-      <p class="text-center about-me-paragraph">I'm a programmer with 3+ years coding for school and personal projects. I have build several applications, including a 2D game using Unity and C#, my personal website using HTML/CSS, Bootstrap, Javascript, React.js, and Node.js</p>
-      <button type="button" class="about-me-button">Check out my projects here.</button>
+    <div id="about-me-section">
+      <h2 class="about-me-title">About me.</h2>
+      <p class="about-me-paragraph">
+        I have been coding for 3+ years. I have built several applications, including a 2D game using Unity and C#, my personal website using HTML/CSS, Bootstrap, Javascript, React.js, and Node.js. <br> Currently, I am working on a chatbot using java and also taking a course in Machine Learning (because why not?!).
+      </p>
+      <a class="projects-link" href="">Check out my projects here.</a>
     </div>
-    <!-- End Skills Section -->
+    <!-- END About Me Section -->
+
+<hr>
+
+    <!-- Skills Section -->
+    <div id="skills-section">
+      <h2 class="skills-title">Skills.</h2>
+      <div class="skill-row">
+        <img class="code" src="images/code.png" alt="">
+        <h3>Languages & Frameworks</h3>
+        <p>Java, Python, HTML 5, CSS 3, JQuery, JavaScript, React.js, Node.js, SQL, .NET, ASP.NET, Angular.js, Express, Portuguese, Spanish.</p>
+      </div>
+      <div class="skill-row2">
+        <img class="monitor" src="images/monitor.png" alt="">
+        <h3>Technologies</h3>
+        <p>Git, Eclipse, MySQL, Azure, AWS.</p>
+      </div>
+      <div class="skill-row3">
+        <img class="monitor" src="images/monitor.png" alt="">
+        <h3>Other Skills</h3>
+        <p>Sense of humor. Time management. Curiosity (yes, this is a skill). Troubleshooting. </p>
+      </div>
+    </div>
+    </div>
+    <!-- END Skills Section -->
+
+    <hr>
 
     <!-- Projects Section -->
+    <div id="projects-section">
+      <h2 class="projects-title">Projects.</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">2D Game</h5>
+              <p class="card-text">I used Unity and C# to create this simple plataform game. Have fun!</p>
+              <a href="#" class="btn btn-primary">Go to game.</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 project-column">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">PROJECT NAME</h5>
+              <p class="card-text">I used Unity and C# to create this simple plataform game. Have fun!</p>
+              <a href="#" class="btn btn-primary">Go to project.</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 project-column">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">PROJECT NAME</h5>
+              <p class="card-text">I used Unity and C# to create this simple plataform game. Have fun!</p>
+              <a href="#" class="btn btn-primary">Go to project.</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 project-column">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Grocery List</h5>
+              <p class="card-text">I created a program using the algorithm SubsetSum to find the best
+                possible grocery shopping list within the given budget.</p>
+              <a href="https://github.com/MarilizePi/Subset_Sum/tree/master/SubsetSum_Project_1" class="btn btn-primary">See in GitHub.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Projects Section -->
 
-    <section id="projects">
-      
-    </section>
+    <hr>
 
     <!-- Contact Section -->
     <section id="contact">
-      <h2>GET IN TOUCH</h2>
-      <p class="contact-message">Let's grab a coffee and chat!</p>
-      <a class="btn" href="marilizepi@gmail.com">CONTACT ME</a>
+      <h2 class="contact-title">Let's chat!</h2>
+      <a class="contact-btn" href="marilizepi@gmail.com">CONTACT ME</a>
     </section>
+    <!-- END Contact Section -->
 
     <!-- Footer -->
     <footer id="footer">
-      <a class="footer-link" href="https://www.linkedin.com/in/maripi" target="_blank">LinkedIn</a>
-    <a class="footer-link" href="https://github.com/MarilizePi" target="_blank">Github</a>
-    <p class="copyright">© 2021 Marilize Pires.</p>
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/maripi"
+        target="_blank"
+        >LinkedIn</a
+      >
+      <a
+        class="footer-link"
+        href="https://github.com/MarilizePi"
+        target="_blank"
+        >Github</a
+      >
+      <p class="copyright">© 2021 Designed and Developed by Marilize Pires.</p>
     </footer>
+    <!-- END Footer -->
   </body>
 </html>

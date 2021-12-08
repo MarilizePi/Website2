@@ -1,84 +1,209 @@
 body {
-    font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f3f4ed;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-bottom: 10px;
+  font-family: "Sacramento", cursive;
+  color: #ff4c29;
+  font-weight: 900;
+}
+
+p {
+  line-height: 2;
+}
+
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 10%;
+  position: relative;
+  margin: 10px auto;
+}
+
+.title-description {
+  font-size: 1.5rem;
+  padding: 0 10%;
+}
+
+#about-me-section,
+#skills-section,
+#projects-section,
+#contact {
+  padding: 5rem;
+  margin: 0 auto;
+  width: 70%;
+}
+
+/*Navegation Bar*/
+
+.nav-item {
+  padding: 0 18px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: 75px;
+}
+
+button.navbar-toggler {
+    height: 40px;
+    width: 75px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  padding: 0 18px;
+}
+
+/*End Navegation Bar*/
+
+.container-fluid {
+  padding: 2%;
+}
+
+.my-pic {
+  width: 50%;
+}
+
+.row {
+  padding: 5%;
+}
+
+.skill-row,
+.skill-row3 {
+  text-align: left;
+}
+
+.skill-row2 {
+  text-align: right;
+}
+
+/* .button-link {
+  margin: 20px 10px;
+  border: 0;
+  font-weight: 300;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #FF4C29;
+  color: #F3F4ED;
+} */
+
+.about-me-title,
+.skills-title,
+.projects-title,
+.contact-title {
+  font-size: 3rem;
+  font-weight: 900;
+  padding-bottom: 1rem;
+  color: #ff4c29;
+}
+
+.projects-link {
+  color: #ff4c29;
+}
+
+
+.project-column {
+    padding: 10px;
+}
+
+
+
+
+#footer {
+  color: #f3f4ed;
+  padding: 20px 0;
+  background-color: #f0a500;
+}
+
+.footer-link {
+  color: #f3f4ed;
+  padding: 0 10px;
+}
+
+.footer-link:hover {
+  color: #ff4c29;
+}
+
+.contact-btn {
+  border-radius: 5px;
+  color: #f3f4ed;
+  font-size: 15px;
+  background: #f0a500;
+  padding: 10px 20px 10px 20px;
+}
+
+.contact-btn:hover {
+  background: #ff4c29;
+  text-decoration: none;
+  color: #f3f4ed;
+}
+
+.copyright {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+  font-size: 0.8rem;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    #about-me-section,
+#skills-section,
+#projects-section,
+#contact {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.about-me-title,
+.skills-title,
+.projects-title,
+.contact-title {
+  font-size: 1.5rem;
 }
 
 h1 {
     font-size: 2rem;
-    font-weight: 500;
-padding-bottom: 1rem;
 }
 
-#title {
-    background-color: #F0A500;
-    color: #fff;
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: .8rem;
 }
 
 
-/*Navegation Bar*/
-.navbar {
-    padding: 0 0 4.5rem;
-    color: #fff;
-    }
-
-    .nav-item {
-        padding: 0 18px;
-    }
-
-.navbar-brand {
+  .navbar-brand {
     font-size: 2rem;
-    font-weight: bold;
-}
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    padding: 10px;
+  }
 
-.nav-link {
-font-size: 1.2rem;
-}
-
-
-
-/*End Navegation Bar*/
-
-
-.my-pic {
-    width: 60%;
-}
-
-.container-fluid {
-    padding: 3% 10%;
-}
-
-.button-link {
-    margin: 20px 10px;
-    border: 0;
-    font-weight: 300;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #FF5151;
-    color: white;
-
-
-}
-
-
-#about-me {
-    padding: 5rem;
-}
-
-.about-me-title {
-    padding-bottom: 1rem;
-}
-
-.about-me-paragraph {
-    line-height: 2;
-}
-
-.about-me-button {
-  justify-content: center;
-  align-items: center;
-}
-
-
-#footer {
-    padding: 30px 0;
-  background-color: #334756;
-}
+  }
