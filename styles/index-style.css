@@ -1,21 +1,25 @@
+/* General styling */
+
 body {
+  background-color: #F3F9FB;
+  color: #222831;
   font-family: "Roboto Mono", monospace;
-  width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: #f3f4ed;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
+  color:#222831;
 }
 
 h1 {
-  font-size: 4rem;
-  padding-bottom: 5%;
+  color: #F05454;
   font-family: "Sacramento", cursive;
-  color: #f3f4ed;
+  font-size: 4rem;
   font-weight: 900;
+  padding-bottom: 5%;
 }
 
 p {
@@ -25,44 +29,53 @@ p {
 hr {
   border: 0;
   height: 1px;
-  width: 10%;
-  position: relative;
   margin: 10px auto;
+  position: relative;
+  width: 10%;
 }
-
-
 
 #about-me-section,
 #skills-section,
 #projects-section,
 #contact {
-  padding: 5rem;
   margin: 0 auto;
+  padding: 5rem;
   width: 70%;
 }
 
+.about-me-title,
+.skills-title,
+.projects-title,
+.contact-title {
+  color: #F05454;
+  font-size: 3rem;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+/* END General styling */
+
+/* Title section styling */
 .container-fluid {
   padding: 0 2%;
 }
 
 /*Navegation Bar*/
-
 .navbar {
   padding: 3% 0;
 }
 
 .nav-item {
-  padding: 0 18px;
   margin: 0 auto;
+  padding: 0 18px;
 }
 
 .navbar-brand {
-  color: #f3f4ed;
   font-family: "Sacramento", cursive;
   font-size: 3rem;
+  height: 40px;
   margin: 0;
   padding: 0;
-  height: 40px;
   width: 75px;
 }
 
@@ -75,12 +88,9 @@ button.navbar-toggler {
   font-size: 1.2rem;
   padding: 0 18px;
 }
-
 /*End Navegation Bar*/
 
-#title {
-  background-color: #f0a500;
-}
+/* Intro page styling */
 
 /* .my-pic {
   width: 100%;
@@ -92,20 +102,22 @@ button.navbar-toggler {
 } */
 
 .title-description {
-    font-size: 1rem;
-    padding: 0 10%;
-    color: #f3f4ed;
-    letter-spacing: 0.5rem;
-  }
-  
-  .description {
-      width: 100%;
-  }
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  padding: 0 10%;
+}
+
+.description {
+  width: 100%;
+}
 
 .row {
   padding: 5%;
 }
+/* END Intro page styling */
+/* END title section styling */
 
+/* Skills Section styling */
 .skill-row,
 .skill-row3 {
   text-align: left;
@@ -115,52 +127,63 @@ button.navbar-toggler {
   text-align: right;
 }
 
-/* .button-link {
-  margin: 20px 10px;
-  border: 0;
-  font-weight: 300;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: #FF4C29;
-  color: #F3F4ED;
-} */
-
-.about-me-title,
-.skills-title,
-.projects-title,
-.contact-title {
-  font-size: 3rem;
-  font-weight: 900;
-  padding-bottom: 1rem;
-  color: #ff4c29;
-}
-
-.projects-link {
-  color: #ff4c29;
-}
-
+/* Projects Section styling */
 .project-column {
   padding: 10px;
 }
 
 .card-body {
+  background-color: #F05454;
   padding: 10%;
 }
 
 .card-title {
-  padding-bottom: 10px;
   font-weight: 900;
-  color: #f0a500;
+  padding-bottom: 10px;
 }
 
+.project-btn {
+  background-color: #F3F9FB;
+  border-radius: 5px;
+  color: #222831;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+}
+
+.project-btn:hover {
+  background-color: #222831;
+  color: #f3f4ed;
+}
+
+/* END Projects Section styling */
+
+/* Contact section */
+.contact-btn {
+  background-color: #222831;
+  border-radius: 5px;
+  color: #f3f4ed;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+}
+
+.contact-btn:hover {
+  background-color: #F05454;
+  color: #f3f4ed;
+}
+
+/* END contact section */
+
+
+
+/* Footer Section styling */
 #footer {
-  background-color: gray;
+  background-color: #30475E;
+  color:#F3F9FB;
   padding: 20px 0;
 }
 
 .footer-link {
-  color: #f3f4ed;
+  color:#F3F9FB;;
   padding: 0 10px;
 }
 
@@ -168,34 +191,23 @@ button.navbar-toggler {
   color: #ff4c29;
 }
 
-.btn {
-  border-radius: 5px;
-  color: #f3f4ed;
-  font-size: 15px;
-  background-color: #f0a500;
-  padding: 10px 20px 10px 20px;
-}
-
-.btn:hover {
-  background-color: #ff4c29;
-  text-decoration: none;
-  color: #f3f4ed;
-}
-
 .copyright {
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 0;
   font-size: 0.8rem;
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 10px;
 }
 
+/* END Footer Section styling */
+
+/* Responsive styling */
 @media screen and (max-width: 800px) {
   #about-me-section,
   #skills-section,
   #projects-section,
   #contact {
-    padding: 2rem;
     margin: 0 auto;
+    padding: 2rem;
     width: 90%;
   }
 
@@ -228,6 +240,28 @@ button.navbar-toggler {
   }
 
   .title-description {
-      font-size: .8rem;
+    font-size: 0.8rem;
+  }
+
+  .skill-row,
+  .skill-row2,
+  .skill-row3 {
+    text-align: center;
   }
 }
+
+
+
+
+
+/* .button-link {
+  border: 0;
+  border-radius: 50%;
+  background-color: #FF4C29;
+  color: #F3F4ED;
+  font-size: .8rem;
+  font-weight: 300;
+  height: 100px;
+  margin: 20px 10px;
+  width: 100px;
+} */
