@@ -1,9 +1,9 @@
 /* General styling */
-
 body {
-  background-color: #F3F9FB;
-  color: #222831;
+  background-color: #fff;
+  color: #334756;
   font-family: "Roboto Mono", monospace;
+  letter-spacing: 1.2px;
   margin: 0 auto;
   text-align: center;
   width: 100%;
@@ -11,72 +11,56 @@ body {
 
 a {
   text-decoration: none;
-  color:#222831;
 }
 
-h1 {
-  color: #F05454;
-  font-family: "Sacramento", cursive;
-  font-size: 4rem;
-  font-weight: 900;
-  padding-bottom: 5%;
-}
 
-p {
-  line-height: 2;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  margin: 10px auto;
-  position: relative;
-  width: 10%;
-}
-
-#about-me-section,
+#intro-section, #about-me-section,
 #skills-section,
-#projects-section,
-#contact {
+#projects-section {
   margin: 0 auto;
   padding: 5rem;
   width: 70%;
 }
 
+
 .about-me-title,
 .skills-title,
-.projects-title,
-.contact-title {
-  color: #F05454;
-  font-size: 3rem;
+.projects-title {
+  text-align: left;
+  font-size: 2rem;
   font-weight: 900;
   padding-bottom: 1rem;
 }
 
+
 /* END General styling */
 
-/* Title section styling */
-.container-fluid {
-  padding: 0 2%;
+/*Navegation Bar*/
+#navbar {
+  padding: 20px 0;
 }
 
-/*Navegation Bar*/
-.navbar {
-  padding: 3% 0;
+ul > li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
 }
 
 .nav-item {
+  color: #334756;
+  font-size: 1rem;
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 25px;
 }
 
-.navbar-brand {
-  font-family: "Sacramento", cursive;
-  font-size: 3rem;
-  height: 40px;
-  margin: 0;
-  padding: 0;
-  width: 75px;
+.nav-brand {
+  padding: 0 25px;
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
 }
 
 button.navbar-toggler {
@@ -91,99 +75,128 @@ button.navbar-toggler {
 /*End Navegation Bar*/
 
 /* Intro page styling */
-
-/* .my-pic {
-  width: 100%;
+.name-intro {
+  font-size: 2rem;
+  margin: 0;
 }
-
-.my-pic-column {
-  padding: 0;
-  width: 0%;
-} */
 
 .title-description {
+  color: #334756;
   font-size: 1rem;
-  letter-spacing: 0.5rem;
-  padding: 0 10%;
-}
-
-.description {
-  width: 100%;
-}
-
-.row {
-  padding: 5%;
+  margin: 0;
 }
 /* END Intro page styling */
-/* END title section styling */
+
+
+
+
+/* About me styling */
+
+/* END About me styling */
+
+
+
 
 /* Skills Section styling */
-.skill-row,
-.skill-row3 {
-  text-align: left;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+	margin: 5px 0;
 }
 
-.skill-row2 {
-  text-align: right;
+.col {
+  margin: 0 10px;
+	border: 6px solid gray;
+  height: 300px;
+  width: 300px;
+  padding: 30px;
 }
+
+
+ .skill {
+   display: inline-block;
+  border: 0;
+  border-radius: 50%;
+  background-color: #FF4C29;
+  color: #F3F4ED;
+  font-size: .8rem;
+  font-weight: 300;
+  height: 100px;
+  margin: 20px 10px;
+  width: 100px;
+} 
+
+
+
+/* END Skills Section styling */
+
+
+
+
 
 /* Projects Section styling */
-.project-column {
-  padding: 10px;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.card-body {
-  background-color: #F05454;
-  padding: 10%;
+.projects {
+  border-radius: 2%;
+  max-width: 200px;
+  min-height: 250px;
+  background: #02b875;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px;
 }
 
-.card-title {
-  font-weight: 900;
-  padding-bottom: 10px;
+.column-title {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.project-content {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
 }
 
 .project-btn {
-  background-color: #F3F9FB;
-  border-radius: 5px;
-  color: #222831;
-  font-size: 15px;
-  padding: 10px 20px 10px 20px;
+  all: unset;
+  float: right;
+  margin-left: auto;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 10px;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
+  letter-spacing: 1.2px;
 }
 
 .project-btn:hover {
-  background-color: #222831;
-  color: #f3f4ed;
+  color: #02b875;
+  background: #fff;
 }
 
 /* END Projects Section styling */
 
-/* Contact section */
-.contact-btn {
-  background-color: #222831;
-  border-radius: 5px;
-  color: #f3f4ed;
-  font-size: 15px;
-  padding: 10px 20px 10px 20px;
-}
-
-.contact-btn:hover {
-  background-color: #F05454;
-  color: #f3f4ed;
-}
-
-/* END contact section */
-
-
-
 /* Footer Section styling */
 #footer {
-  background-color: #30475E;
-  color:#F3F9FB;
-  padding: 20px 0;
+  background-color: #082032;
+  bottom: 0;
+  color: #f3f9fb;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .footer-link {
-  color:#F3F9FB;;
+  color: #f3f9fb;
   padding: 0 10px;
 }
 
@@ -209,13 +222,6 @@ button.navbar-toggler {
     margin: 0 auto;
     padding: 2rem;
     width: 90%;
-  }
-
-  .about-me-title,
-  .skills-title,
-  .projects-title,
-  .contact-title {
-    font-size: 1.5rem;
   }
 
   h1 {
@@ -249,19 +255,3 @@ button.navbar-toggler {
     text-align: center;
   }
 }
-
-
-
-
-
-/* .button-link {
-  border: 0;
-  border-radius: 50%;
-  background-color: #FF4C29;
-  color: #F3F4ED;
-  font-size: .8rem;
-  font-weight: 300;
-  height: 100px;
-  margin: 20px 10px;
-  width: 100px;
-} */
