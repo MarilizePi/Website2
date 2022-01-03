@@ -18,7 +18,7 @@ a {
 #skills-section,
 #projects-section {
   margin: 0 auto;
-  padding: 5rem;
+  padding: .5rem 5rem 5rem 5rem;
   width: 70%;
 }
 
@@ -98,6 +98,7 @@ button.navbar-toggler {
 
 
 /* Skills Section styling */
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -115,16 +116,9 @@ button.navbar-toggler {
 
 
  .skill {
+   padding: 15px;
    display: inline-block;
-  border: 0;
-  border-radius: 50%;
-  background-color: #FF4C29;
-  color: #F3F4ED;
-  font-size: .8rem;
-  font-weight: 300;
-  height: 100px;
-  margin: 20px 10px;
-  width: 100px;
+  width: 70px;
 } 
 
 
@@ -145,9 +139,9 @@ button.navbar-toggler {
 
 .projects {
   border-radius: 2%;
-  max-width: 200px;
+  max-width: 300px;
   min-height: 250px;
-  background: #02b875;
+  background: #082032;
   padding: 30px;
   box-sizing: border-box;
   color: #fff;
